@@ -1,5 +1,9 @@
 # Pathology
 
+[![Gem Version](https://badge.fury.io/rb/pathology.svg)](http://badge.fury.io/rb/pathology)
+[![Build Status](https://travis-ci.org/mattgillooly/pathology.svg?branch=master)](https://travis-ci.org/mattgillooly/pathology)
+[![Code Climate](https://codeclimate.com/github/mattgillooly/pathology.png)](https://codeclimate.com/github/mattgillooly/pathology)
+
 Specify a template to be used for generating paths by replacing :tokens with values from a hash.
 This can be handy if you want to generate dynamic filenames or URLs using runtime data and a configurable format.
 
