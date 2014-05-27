@@ -7,7 +7,7 @@ describe Pathology::Template do
 
     let(:values) {
       {
-        :date => Date.today,
+        :date => Date.new(2014, 5, 24),
         :topic => 'hello'
       }
     }
