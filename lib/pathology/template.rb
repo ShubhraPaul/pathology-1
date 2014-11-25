@@ -6,7 +6,9 @@ module Pathology
     end
 
     def interpolate(values)
-      values.reduce(@pattern) do |interpolated, value|
+      sorted_values = values.sort_by{|token, replacement| token.length}.reverse
+
+      sorted_values.reduce(@pattern) do |interpolated, value|
         token, replacement = *value
         interpolated.gsub(/:#{token}/, replacement.to_s)
       end
